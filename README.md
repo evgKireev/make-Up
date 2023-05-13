@@ -1,3 +1,4 @@
 @Created by Evgeniy Kireev
-- 🔗 https://evgkireev.github.io
+
+- 🔗 https://github.com/evgKireev
 - 🔗 https://www.linkedin.com/in/evgeniy-kireev-13a966239/
