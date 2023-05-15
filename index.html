@@ -31,7 +31,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header--index">
       <div class="header__slider">
         <div class="header__slider-images">
           <img
@@ -52,13 +52,38 @@
           />
         </div>
       </div>
-      <div class="header__top">
+      <div class="header__top header__top--index">
         <nav class="nav">
           <ul class="nav-inner">
-            <li class="nav-item">Main</li>
-            <li class="nav-item">Portfolio</li>
-            <li class="nav-item">Contacts</li>
-            <li class="nav-item">About me</li>
+            <div class="nav-item nav-item-index--active">
+              <a
+                class="nav-item__link nav-item__link--index"
+                href="index.html"
+                ><li>Main</li></a
+              >
+            </div>
+            <div class="nav-item nav-item--index">
+              <a
+                class="nav-item__link nav-item__link--index"
+                href="portfolio.html"
+              >
+                <li>Portfolio</li></a
+              >
+            </div>
+            <div class="nav-item nav-item--index">
+              <a
+                class="nav-item__link nav-item__link--index"
+                href="#"
+                ><li>Contacts</li></a
+              >
+            </div>
+            <div class="nav-item nav-item--index">
+              <a
+                class="nav-item__link nav-item__link--index"
+                href="#"
+                ><li>About me</li></a
+              >
+            </div>
           </ul>
         </nav>
         <div class="social">
