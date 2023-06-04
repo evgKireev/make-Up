@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Make-Up</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="app/css/style.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header header--client">
+      <div class="container">
+        <div class="header__top">
+          <nav class="nav">
+            <ul class="nav-inner">
+              <div class="nav-item">
+                <a
+                  class="nav-item__link"
+                  href="index.html"
+                  ><li>Main</li></a
+                >
+              </div>
+              <div class="nav-item nav-item--active">
+                <a
+                  class="nav-item__link"
+                  href="portfolio.html"
+                >
+                  <li>Portfolio</li></a
+                >
+              </div>
+              <div class="nav-item">
+                <a
+                  class="nav-item__link"
+                  href="about.html"
+                  ><li>BIO</li></a
+                >
+              </div>
+            </ul>
+          </nav>
+          <div class="social">
+            <a
+              target="_blank"
+              href="https://t.me/valpal_makeup"
+              ><div class="social__item">
+                <img
+                  src="./app/images/social/telegram.svg"
+                  alt="Telegram"
+                /></div
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/valpal_makeup/?igshid=MmJiY2I4NDBkZg%3D%3D"
+              ><div class="social__item">
+                <img
+                  src="./app/images/social/instagram.svg"
+                  alt="Instagram"
+                /></div
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="breadcrumbs">
+      <div class="container">
+        <a href="portfolio.html">
+          <div class="breadcrumbs__inner">
+            <svg
+              width="10"
+              height="16"
+              viewBox="0 0 10 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.49257 16L0 8L8.49257 0L10 1.42L3.01486 8L10 14.58L8.49257 16Z"
+                fill="#797979"
+              />
+            </svg>
+            Cinema
+          </div>
+        </a>
+      </div>
+    </div>
+    <section class="photos">
+      <div class="container">
+        <div class="grid-content">
+          <div class="grid-content__images">
+            <img
+              id="0"
+              class="grid-content__img"
+              src="./app/images/cinema-grid/1.jpg"
+              alt="photo"
+            />
+          </div>
+          <div class="grid-content__images">
+            <img
+              id="1"
+              class="grid-content__img"
+              src="./app/images/cinema-grid/2.jpg"
+              alt="photo"
+            />
+          </div>
+          <div class="grid-content__images">
+            <img
+              id="2"
+              class="grid-content__img"
+              src="./app/images/cinema-grid/3.jpg"
+              alt="photo"
+            />
+          </div>
+          <div class="grid-content__images">
+            <img
+              id="3"
+              class="grid-content__img"
+              src="./app/images/cinema-grid/4.jpg"
+              alt="photo"
+            />
+          </div>
+          <div class="grid-content__images">
+            <img
+              id="4"
+              class="grid-content__img"
+              src="./app/images/cinema-grid/5.jpg"
+              alt="photo"
+            />
+          </div>
+          <div class="grid-content__images">
+            <img
+              id="5"
+              class="grid-content__img"
+              src="./app/images/cinema-grid/6.jpg"
+              alt="photo"
+            />
+          </div>
+          <div class="grid-content__images">
+            <img
+              id="6"
+              class="grid-content__img"
+              src="./app/images/cinema-grid/7.jpg"
+              alt="photo"
+            />
+          </div>
+          <div class="grid-content__images">
+            <img
+              id="7"
+              class="grid-content__img"
+              src="./app/images/cinema-grid/8.jpg"
+              alt="photo"
+            />
+          </div>
+          <div class="grid-content__images">
+            <img
+              id="8"
+              class="grid-content__img"
+              src="./app/images/cinema-grid/9.jpg"
+              alt="photo"
+            />
+          </div>
+          <div class="grid-content__images">
+            <img
+              id="9"
+              class="grid-content__img"
+              src="./app/images/cinema-grid/10.jpg"
+              alt="photo"
+            />
+          </div>
+          <div class="grid-content__images">
+            <img
+              id="10"
+              class="grid-content__img"
+              src="./app/images/cinema-grid/11.jpg"
+              alt="photo"
+            />
+          </div>
+          <div class="grid-content__images">
+            <img
+              id="11"
+              class="grid-content__img"
+              src="./app/images/cinema-grid/12.jpg"
+              alt="photo"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="modal"
+      id="content-1"
+    >
+      <div class="modal-fotorama">
+        <div
+          id="fotorama"
+          class="fotorama"
+          data-width="1250"
+          data-height="672"
+          data-nav="thumbs"
+          data-thumbwidth="190"
+          data-thumbheight="112"
+          data-allowfullscreen="native"
+          data-fit="contain"
+          data-transition="crossfade"
+          data-loop="true"
+          data-keyboard="true"
+          data-arrows="true"
+          data-click="true"
+          data-swipe="true"
+        >
+          <img
+            src="./app/images/cinema-grid/1.jpg"
+            alt="photo"
+          />
+          <img
+            src="./app/images/cinema-grid/2.jpg"
+            alt="photo"
+          />
+          <img
+            src="./app/images/cinema-grid/3.jpg"
+            alt="photo"
+          />
+          <img
+            src="./app/images/cinema-grid/4.jpg"
+            alt="photo"
+          />
+          <img
+            src="./app/images/cinema-grid/5.jpg"
+            alt="photo"
+          />
+          <img
+            src="./app/images/cinema-grid/6.jpg"
+            alt="photo"
+          />
+          <img
+            src="./app/images/cinema-grid/7.jpg"
+            alt="photo"
+          />
+          <img
+            src="./app/images/cinema-grid/8.jpg"
+            alt="photo"
+          />
+          <img
+            src="./app/images/cinema-grid/9.jpg"
+            alt="photo"
+          />
+          <img
+            src="./app/images/cinema-grid/10.jpg"
+            alt="photo"
+          />
+          <img
+            src="./app/images/cinema-grid/11.jpg"
+            alt="photo"
+          />
+          <img
+            src="./app/images/cinema-grid/12.jpg"
+            alt="photo"
+          />
+        </div>
+        <div class="close"></div>
+        <div
+          class="link"
+          data-shareBtn="sharecontent-1"
+        >
+          <div class="share-link">
+            <div class="share-close"></div>
+            <div class="share-link__sicial">
+              <div class="share-link__images copy-link">
+                <img
+                  src="/app/images/social/link.svg"
+                  alt="telegram"
+                />
+              </div>
+              <div class="share-link__images shere-telegram">
+                <img
+                  src="/app/images/social/telegram-share.svg"
+                  alt="telegram"
+                />
+              </div>
+              <div class="share-link__images shere-instagram">
+                <img
+                  src="/app/images/social/inst-share.svg"
+                  alt="instagram"
+                />
+              </div>
+              <div class="share-link__images shere-facebock">
+                <img
+                  src="/app/images/social/faceb-share.svg"
+                  alt="facebook"
+                />
+              </div>
+              <div class="share-link__images shere-vk">
+                <img
+                  src="/app/images/social/vk-share.svg"
+                  alt="vk"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pogination"></div>
+      </div>
+    </section>
+    <script src="app/js/main.min.js"></script>
+  </body>
+</html>
