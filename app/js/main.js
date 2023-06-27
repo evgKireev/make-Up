@@ -22,14 +22,34 @@ const shareInstagram = document.querySelector('.shere-instagram')
 const shareFacebock = document.querySelector('.shere-facebock')
 const shareVk = document.querySelector('.shere-vk')
 
+const burgerMenuWrap = document.querySelector('.menu-wrapper')
+const burgerMenuWrapPortfolio = document.querySelector(
+  '.menu-wrapper--portfolio'
+)
+const burgerMenu = document.querySelector('.hamburger-menu')
+const menuMobail = document.querySelector('.menu-mobail')
+const hamburgerMenu = document.querySelector('.hamburger-menu')
+
 let indexImg = 0
 
 function render() {
   pogination ? (pogination.textContent = `1/${portfolioItemImg.length}`) : ''
-
   menuItem.forEach((item) => {
     item.addEventListener('click', setItem)
   })
+
+  burgerMenuWrap &&
+    burgerMenuWrap.addEventListener('click', () => {
+      burgerMenu.classList.toggle('animate')
+      menuMobail.classList.toggle('menu-mobail--active')
+      hamburgerMenu.classList.toggle('hamburger-menu--active')
+    })
+
+  burgerMenuWrapPortfolio &&
+    burgerMenuWrapPortfolio.addEventListener('click', () => {
+      burgerMenu.classList.toggle('animate')
+      menuMobail.classList.toggle('menu-mobail--active')
+    })
 
   portfolioItem.forEach((item) => {
     item.addEventListener('click', openPortfolioItemTwo)

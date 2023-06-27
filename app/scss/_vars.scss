@@ -3,25 +3,29 @@ $acsent: #2a2a2a;
 $hover: #3d3d3d;
 $active: #2b2b2b;
 
+$bar-width: 14px;
+$bar-height: 2px;
+$bar-spacing: 5px;
+
 %btn {
   padding: 12px 120px;
   background-color: transparent;
-  border: 2px solid #000000;
+  border: 2px solid #171717;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 38px;
-  color: $acsent;
+  font-size: 28px;
+  line-height: 32px;
+  color: #171717;
   cursor: pointer;
   transition: all 0.7s;
   &:hover {
-    background-color: $hover;
+    background-color: #171717;
     color: $default;
     transition: all 0.7s;
   }
   &:active {
-    background-color: $active;
+    background-color: #171717;
     color: default;
   }
 }

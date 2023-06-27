@@ -33,13 +33,67 @@
       href="app/css/style.min.css"
     />
   </head>
-
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__top">
-          <nav class="nav">
-            <ul class="nav-inner">
+    <div class="container--portfolio">
+      <header class="header">
+        <div>
+          <div class="wrap-menu">
+            <div class="menu-wrapper--portfolio">
+              <div class="hamburger-menu"></div>
+            </div>
+          </div>
+          <div class="header__top">
+            <nav class="nav">
+              <ul class="nav-inner">
+                <div class="nav-item">
+                  <a
+                    class="nav-item__link"
+                    href="index.html"
+                    ><li>Main</li></a
+                  >
+                </div>
+                <div class="nav-item nav-item--active">
+                  <a
+                    class="nav-item__link"
+                    href="portfolio.html"
+                  >
+                    <li>Portfolio</li></a
+                  >
+                </div>
+                <div class="nav-item">
+                  <a
+                    class="nav-item__link"
+                    href="about.html"
+                    ><li>BIO</li></a
+                  >
+                </div>
+              </ul>
+            </nav>
+            <div class="social">
+              <a
+                target="_blank"
+                href="https://t.me/valpal_makeup"
+                ><div class="social__item">
+                  <img
+                    src="./app/images/social/telegram.svg"
+                    alt="Telegram"
+                  /></div
+              ></a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/valpal_makeup/?igshid=MmJiY2I4NDBkZg%3D%3D"
+                ><div class="social__item">
+                  <img
+                    src="./app/images/social/instagram.svg"
+                    alt="Instagram"
+                  /></div
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-mobail">
+          <nav class="nav-mobail">
+            <ul class="nav-inner--mobail">
               <div class="nav-item">
                 <a
                   class="nav-item__link"
@@ -64,106 +118,110 @@
               </div>
             </ul>
           </nav>
-          <div class="social">
-            <a
-              target="_blank"
-              href="https://t.me/valpal_makeup"
-              ><div class="social__item">
-                <img
-                  src="./app/images/social/telegram.svg"
-                  alt="Telegram"
-                /></div
-            ></a>
-            <a
-              target="_blank"
-              href="https://www.instagram.com/valpal_makeup/?igshid=MmJiY2I4NDBkZg%3D%3D"
-              ><div class="social__item">
-                <img
-                  src="./app/images/social/instagram.svg"
-                  alt="Instagram"
-                /></div
-            ></a>
+          <div class="social-mobail">
+            CONTACTS
+            <div class="social">
+              <a
+                target="_blank"
+                href="https://t.me/valpal_makeup"
+                ><div class="social__item">
+                  <img
+                    src="./app/images/social/telegram.svg"
+                    alt="Telegram"
+                  /></div
+              ></a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/valpal_makeup/?igshid=MmJiY2I4NDBkZg%3D%3D"
+                ><div class="social__item">
+                  <img
+                    src="./app/images/social/instagram.svg"
+                    alt="Instagram"
+                  /></div
+              ></a>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-    <section class="portfolio">
-      <div
-        data-btn="content-1"
-        class="portfolio__item"
-        style="
-          background-image: url('./app/images/gallery-menu/1.jpg');
-          background-position: center;
-        "
-      >
-        <a href="cinema.html">
-          <div class="portfolio-wrap"><h1>CINEMA</h1></div></a
+      </header>
+      <section class="portfolio">
+        <div
+          data-btn="content-1"
+          class="portfolio__item"
+          style="
+            background-image: url('./app/images/gallery-menu/1.jpg');
+            background-position: center;
+            background-size: 100%;
+            background-size: cover;
+          "
         >
-      </div>
-      <div
-        data-btn="content-2"
-        class="portfolio__item"
-        style="
-          background-image: url(./app/images/gallery-menu/2.jpg);
-          background-position: center;
-        "
-      >
-        <a href="hair.html">
-          <div class="portfolio-wrap"><h1>HAIR</h1></div></a
+          <a href="cinema.html">
+            <div class="portfolio-wrap"><h1>CINEMA</h1></div></a
+          >
+        </div>
+        <div
+          data-btn="content-2"
+          class="portfolio__item"
+          style="
+            background-image: url(./app/images/gallery-menu/2.jpg);
+            background-position: center;
+            background-size: 100%;
+            background-size: cover;
+          "
         >
-      </div>
-      <div
-        data-btn="content-3"
-        class="portfolio__item"
-        style="
-          background-image: url(./app/images/gallery-menu/3.jpg);
-          background-position: center;
-        "
-      >
-        <a href="art.html"
-          ><div class="portfolio-wrap">
-            <h1>
-              ART <br />
-              MAKE-UP
-            </h1>
-          </div></a
+          <a href="hair.html">
+            <div class="portfolio-wrap"><h1>HAIR</h1></div></a
+          >
+        </div>
+        <div
+          data-btn="content-3"
+          class="portfolio__item"
+          style="
+            background-image: url(./app/images/gallery-menu/3.jpg);
+            background-position: center;
+            background-size: 100%;
+            background-size: cover;
+          "
         >
-      </div>
-      <div
-        data-btn="content-4"
-        class="portfolio__item"
-        style="
-          background-image: url(./app/images/gallery-menu/5.jpg);
-          background-position: center;
-        "
-      >
-        <a href="client.html">
-          <div class="portfolio-wrap">
-            <h1>
-              MAKE-UP FOR <br />
-              A CLIENT
-            </h1>
-          </div></a
+          <a href="art.html"
+            ><div class="portfolio-wrap">
+              <h1>ART MAKE-UP</h1>
+            </div></a
+          >
+        </div>
+        <div
+          data-btn="content-4"
+          class="portfolio__item"
+          style="
+            background-image: url(./app/images/gallery-menu/5.jpg);
+            background-position: center;
+            background-size: 100%;
+            background-size: cover;
+          "
         >
-      </div>
-      <div
-        data-btn="content-5"
-        class="portfolio__item"
-        style="
-          background-image: url(./app/images/gallery-menu/4.jpg);
-          background-position: center;
-        "
-      >
-        <a href="face-painting.html"
-          ><div class="portfolio-wrap">
-            <h1>
-              FACE <br />
-              PAINTING
-            </h1>
-          </div></a
+          <a href="client.html">
+            <div class="portfolio-wrap">
+              <h1>MAKE-UP FOR A CLIENT</h1>
+            </div></a
+          >
+        </div>
+        <div
+          data-btn="content-5"
+          class="portfolio__item"
+          style="
+            background-image: url(./app/images/gallery-menu/4.jpg);
+            background-position: center;
+            background-size: 100%;
+            background-size: cover;
+          "
         >
-      </div>
-    </section>
+          <a href="face-painting.html"
+            ><div class="portfolio-wrap">
+              <h1>FACE PAINTING</h1>
+            </div></a
+          >
+        </div>
+      </section>
+    </div>
     <script src="app/js/main.min.js"></script>
   </body>
 </html>
