@@ -30,6 +30,7 @@ const burgerMenu = document.querySelector('.hamburger-menu')
 const menuItemMobail = document.querySelectorAll('.nav-item--mobail')
 const menuMobail = document.querySelector('.menu-mobail')
 const hamburgerMenu = document.querySelector('.hamburger-menu')
+const body = document.querySelector('body')
 
 let indexImg = 0
 
@@ -47,6 +48,12 @@ function render() {
       burgerMenu.classList.toggle('animate')
       menuMobail.classList.toggle('menu-mobail--active')
       hamburgerMenu.classList.toggle('hamburger-menu--active')
+      if (body.classList.contains('open-menu')) {
+        body.classList.remove('open-menu')
+        console.log('d')
+      } else {
+        body.classList.add('open-menu')
+      }
     })
 
   burgerMenuWrapPortfolio &&
@@ -56,6 +63,7 @@ function render() {
       )
       burgerMenu.classList.toggle('animate')
       menuMobail.classList.toggle('menu-mobail--active')
+      body.classList.toggle('open-menu')
     })
 
   portfolioItem.forEach((item) => {
@@ -155,7 +163,7 @@ render()
 
 $('.header__slider').slick({
   accessibility: false,
-  // autoplay: true,
+  autoplay: true,
   autoplaySpeed: 2500,
   arrows: false,
   infinite: true,
@@ -165,7 +173,7 @@ $('.header__slider').slick({
 
 $('.header__slider--mobail').slick({
   accessibility: false,
-  // autoplay: true,
+  autoplay: true,
   autoplaySpeed: 2500,
   arrows: false,
   infinite: true,

@@ -597,14 +597,14 @@
 }
 
 @media (max-width: 480px) {
-  // .header {
-  //   &__slider {
-  //     display: none;
-  //   }
-  //   &__slider--mobail {
-  //     display: block;
-  //   }
-  // }//тут откоментитть когда бдут фото на слайдер
+  .header {
+    &__slider {
+      display: none;
+    }
+    &__slider--mobail {
+      display: block;
+    }
+  }
   .about-info {
     &__img {
       display: none;
