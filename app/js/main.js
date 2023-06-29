@@ -27,6 +27,7 @@ const burgerMenuWrapPortfolio = document.querySelector(
   '.menu-wrapper--portfolio'
 )
 const burgerMenu = document.querySelector('.hamburger-menu')
+const menuItemMobail = document.querySelectorAll('.nav-item--mobail')
 const menuMobail = document.querySelector('.menu-mobail')
 const hamburgerMenu = document.querySelector('.hamburger-menu')
 
@@ -40,6 +41,9 @@ function render() {
 
   burgerMenuWrap &&
     burgerMenuWrap.addEventListener('click', () => {
+      menuItemMobail.forEach((value) =>
+        value.classList.toggle('menu__item--active')
+      )
       burgerMenu.classList.toggle('animate')
       menuMobail.classList.toggle('menu-mobail--active')
       hamburgerMenu.classList.toggle('hamburger-menu--active')
@@ -47,6 +51,9 @@ function render() {
 
   burgerMenuWrapPortfolio &&
     burgerMenuWrapPortfolio.addEventListener('click', () => {
+      menuItemMobail.forEach((value) =>
+        value.classList.toggle('menu__item--active')
+      )
       burgerMenu.classList.toggle('animate')
       menuMobail.classList.toggle('menu-mobail--active')
     })
@@ -148,7 +155,17 @@ render()
 
 $('.header__slider').slick({
   accessibility: false,
-  autoplay: true,
+  // autoplay: true,
+  autoplaySpeed: 2500,
+  arrows: false,
+  infinite: true,
+  fade: true,
+  cssEase: 'linear',
+})
+
+$('.header__slider--mobail').slick({
+  accessibility: false,
+  // autoplay: true,
   autoplaySpeed: 2500,
   arrows: false,
   infinite: true,

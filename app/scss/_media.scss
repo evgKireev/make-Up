@@ -43,6 +43,39 @@
       }
     }
   }
+  .breadcrumbs {
+    margin-bottom: 37px;
+  }
+  .grid-content {
+    padding-bottom: 100px;
+    &__images {
+      width: 100%;
+      height: 380px;
+    }
+  }
+  .fotorama {
+    &__wrap {
+      padding: 70px 0 0 0;
+    }
+  }
+  .pogination {
+    left: 0;
+  }
+  .fotorama {
+    &__nav__frame {
+      width: 152px !important;
+    }
+    &__stage {
+      height: 650px !important;
+      margin-bottom: 64px;
+    }
+    &__arr--prev {
+      left: 0;
+    }
+    &__arr--next {
+      right: 0;
+    }
+  }
 }
 
 @media (max-width: 1024px) {
@@ -125,6 +158,41 @@
         width: 196px;
       }
     }
+  }
+  .grid-content {
+    &__images {
+      width: 100%;
+      height: 325px;
+    }
+  }
+  .fotorama {
+    &__wrap {
+      padding: 48px 73px 0 73px;
+    }
+    &__stage {
+      height: 509px !important;
+      margin-bottom: 13px;
+    }
+    &__nav__frame {
+      width: 134px !important;
+      height: 92px !important;
+    }
+    &__nav {
+      gap: 12px;
+    }
+    &__nav__shaft {
+      gap: 12px;
+    }
+    &__arr--prev {
+      left: -80px;
+    }
+    &__arr--next {
+      right: -80px;
+    }
+  }
+  .pogination {
+    bottom: 135px;
+    left: 75px;
   }
 }
 
@@ -248,6 +316,36 @@
       }
     }
   }
+  .grid-content {
+    padding-bottom: 80px;
+    &__images {
+      width: 100%;
+      height: 285px;
+    }
+  }
+  .fotorama {
+    &__wrap {
+      padding: 73px 63px 0 63px;
+    }
+    &__stage {
+      height: 463px !important;
+      margin-bottom: 60px;
+    }
+    &__nav__frame {
+      width: 113px !important;
+      height: 79px !important;
+    }
+    &__arr--prev {
+      left: -75px;
+    }
+    &__arr--next {
+      right: -75px;
+    }
+  }
+  .pogination {
+    bottom: 85px;
+    left: 65px;
+  }
 }
 
 @media (max-width: 670px) {
@@ -292,7 +390,6 @@
   }
 
   .portfolio__item {
-    max-width: 158px;
     height: 160px;
     &:nth-child(1) {
       height: 320px;
@@ -323,6 +420,9 @@
         width: 135px;
       }
     }
+  }
+  .grid-content {
+    grid-gap: 5px 5px;
   }
 }
 
@@ -429,9 +529,82 @@
     gap: 8px 8px;
     padding-bottom: 0;
   }
+  .breadcrumbs {
+    margin-bottom: 40px;
+    &__inner {
+      font-size: 12px;
+      line-height: 15px;
+      svg {
+        width: 10px;
+        height: 14px;
+      }
+    }
+  }
+  .grid-content {
+    padding-bottom: 60px;
+    &__images {
+      width: 100%;
+      height: 205px;
+    }
+  }
+  .modal-fotorama {
+    padding: 0;
+  }
+  .fotorama {
+    &__wrap {
+      padding: 111px 0px 60px 0px;
+    }
+    &__stage {
+      height: 640px !important;
+      margin-bottom: 40px;
+    }
+    &__nav__frame {
+      width: 90px !important;
+      height: 60px !important;
+    }
+    &__arr--prev {
+      left: -7px;
+      width: 24px;
+      height: 24px;
+      background-size: 24px 24px;
+    }
+    &__arr--next {
+      right: -7px;
+      width: 24px;
+      height: 24px;
+      background-size: 24px 24px;
+    }
+    &__fullscreen-icon {
+      width: 24px;
+      height: 24px;
+      background-size: 24px 24px;
+    }
+  }
+  .pogination {
+    font-size: 16px;
+    bottom: 65px;
+    left: 1px;
+  }
+  .link,
+  .close {
+    width: 24px;
+    height: 24px;
+    background-size: 24px 24px;
+    &:hover {
+      background-size: 24px 24px;
+    }
+  }
 }
 
 @media (max-width: 480px) {
+  // .header {
+  //   &__slider {
+  //     display: none;
+  //   }
+  //   &__slider--mobail {
+  //     display: block;
+  //   }
+  // }//тут откоментитть когда бдут фото на слайдер
   .about-info {
     &__img {
       display: none;
@@ -580,5 +753,43 @@
   }
   .portfolio {
     gap: 4px 4px;
+  }
+  .header--client {
+    margin-bottom: 16px;
+  }
+  .breadcrumbs {
+    margin-bottom: 24px;
+  }
+  .grid-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 40px;
+    &__images {
+      width: 100%;
+      height: 208px;
+    }
+  }
+}
+
+@media (max-height: 900px) {
+  .modal-fotorama {
+    padding: 0;
+  }
+  .close,
+  .link {
+    top: 18px;
+  }
+  .fotorama {
+    &__stage {
+      height: 620px !important;
+      margin-bottom: 13px;
+    }
+  }
+}
+
+@media (max-height: 900px) and (min-width: 1024px) {
+  .pogination {
+    bottom: 115px;
+    left: 105px;
   }
 }

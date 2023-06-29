@@ -41,20 +41,24 @@
       line-height: 39px;
     }
   }
+  &__slider--mobail {
+    display: none;
+  }
 }
 
 .menu-mobail {
-  display: none;
-  position: absolute;
+  opacity: 0;
+  position: fixed;
   background-color: $default;
   width: 100%;
   height: 100vh;
   top: 0;
-  padding: 88px 20px 40px 20px;
-  z-index: 2;
+  padding: 88px 20px 60px 20px;
+  z-index: -9999;
 }
 
 .menu-mobail--active {
+  opacity: 1;
   color: #171717;
   font-size: 16px;
   font-family: Inter;
@@ -62,6 +66,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .social-mobail {
@@ -81,12 +86,13 @@
 
 .container--portfolio {
   padding: 0 100px;
-  max-width: 1240px;
+  max-width: 1440px;
   margin: 0 auto;
+  height: 100vh;
 }
 
 .header--client {
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 }
 
 .header__slider-images {
@@ -156,15 +162,14 @@
   display: flex;
   flex-direction: column;
   gap: 28px;
-  li {
-    padding: 8px 0;
-    width: fit-content;
-  }
 }
 
 .nav-item {
   border-bottom: 1px solid transparent;
   width: fit-content;
+  padding: 8px 0;
+  width: fit-content;
+
   &__link {
     color: $acsent;
   }
@@ -186,6 +191,21 @@
   border-bottom: 1px solid $default;
 }
 
+.nav-item--mobail {
+  opacity: 0;
+  transform: translateX(-200%);
+  transition: opacity 0.5s 0.1s, transform 0.5s 0.1s;
+  &:nth-child(2) {
+    transition: opacity 0.5s 0.3s, transform 0.5s 0.3s;
+  }
+  &:nth-child(3) {
+    transition: opacity 0.5s 0.4s, transform 0.5s 0.4s;
+  }
+  &:nth-child(3) {
+    transition: opacity 0.5s 0.5s, transform 0.5s 0.5s;
+  }
+}
+
 .nav-item--active {
   border-bottom: 1px solid $acsent !important;
   width: fit-content;
@@ -200,6 +220,13 @@
   &:hover:after {
     transform: scaleX(0);
   }
+}
+
+.menu__item--active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 2s;
+  transition: opacity 0.5s 0.2s, transform 0.5s 0.2s;
 }
 
 .social {
@@ -344,7 +371,7 @@
 
 .portfolio__item {
   cursor: pointer;
-  max-width: 403px;
+  width: 100%;
   height: 256px;
   text-align: center;
   a {
@@ -401,21 +428,20 @@
 .modalShow {
   opacity: 1;
   visibility: visible;
+  overflow: auto;
+  z-index: 9999;
 }
 
 .modal-fotorama {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #ffffff;
+  position: relative;
+  padding: 48px 0 40px 0;
 }
 
 .fotorama {
-  background-color: #ffffff;
+  background-color: $default;
   overflow: visible;
   &__wrap {
-    padding: 90px 110px 56px;
+    padding: 56px 105px 0 105px;
     position: static;
   }
 
@@ -434,7 +460,6 @@
   }
 
   &__stage {
-    padding-top: 40px;
     margin-bottom: 64px;
     position: relative;
     overflow: visible;
@@ -468,7 +493,6 @@
   }
   &__fullscreen-icon {
     top: -40px;
-    right: 0;
     background: url('../images/icon/shere.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -488,7 +512,7 @@
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  top: 0;
+  top: 50px;
   right: 0;
   cursor: pointer;
   transition: all 0.5s;
@@ -509,7 +533,7 @@
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
   cursor: pointer;
   transition: all 0.5s;
@@ -525,8 +549,8 @@
   transition: all 0.5s;
   opacity: 1;
   position: absolute;
-  top: 49px;
-  left: 50%;
+  bottom: 160px;
+  left: 110px;
   color: #797979;
   font-weight: 500;
   font-size: 20px;
@@ -555,7 +579,7 @@
   transform: translateY(-50px);
   pointer-events: none;
   width: 44px;
-  height: 268px;
+  height: 224px;
   background-color: #2a2a2a;
   padding: 63px 6px 4px 6px;
   position: absolute;
@@ -756,7 +780,7 @@
   grid-gap: 12px 12px;
   padding-bottom: 104px;
   &__images {
-    width: 301px;
+    width: 100%;
     height: 440px;
     overflow: hidden;
     cursor: pointer;
@@ -784,7 +808,7 @@
     font-size: 18px;
     line-height: 22px;
     color: #797979;
-    margin-left: 12px;
+    margin-left: 5px;
     transition: all 0.7s;
     &:hover {
       color: $acsent;
@@ -824,7 +848,7 @@
   height: $bar-height + $bar-spacing * 2;
   cursor: pointer;
   z-index: 999;
-  top: 5px;
+  top: 6px;
   left: 5px;
 }
 
