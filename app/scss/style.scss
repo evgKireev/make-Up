@@ -54,7 +54,7 @@
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   top: 0;
-  padding: 88px 20px 60px 20px;
+  padding: 88px 20px 40px 20px;
   z-index: -9999;
 }
 
@@ -80,7 +80,8 @@
 
 .header--index {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   position: relative;
   margin-bottom: 60px;
 }
