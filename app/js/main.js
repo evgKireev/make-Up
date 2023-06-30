@@ -50,7 +50,6 @@ function render() {
       hamburgerMenu.classList.toggle('hamburger-menu--active')
       if (body.classList.contains('open-menu')) {
         body.classList.remove('open-menu')
-        console.log('d')
       } else {
         body.classList.add('open-menu')
       }
@@ -71,9 +70,10 @@ function render() {
   })
 
   closeBtn &&
-    closeBtn.addEventListener('click', () =>
+    closeBtn.addEventListener('click', () => {
       modalFotorama.classList.remove('modalShow')
-    )
+      body.classList.remove('open-menu')
+    })
 
   shareClose &&
     shareClose.addEventListener('click', (e) => {
@@ -142,6 +142,7 @@ function render() {
     openPortfolioItem(e)
     fotoramaData.show(Number(indexImg))
     modalFotorama.classList.add('modalShow')
+    body.classList.add('open-menu')
   }
 
   function URLShare(urlSocial) {

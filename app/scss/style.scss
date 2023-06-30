@@ -84,13 +84,14 @@
   height: calc(var(--vh, 1vh) * 100);
   position: relative;
   margin-bottom: 60px;
+  overflow: hidden;
 }
 
 .container--portfolio {
   padding: 0 100px;
   max-width: 1440px;
   margin: 0 auto;
-  height: 100vh;
+  height: fit-content;
 }
 
 .header--client {
@@ -561,7 +562,22 @@
 
 .fotorama--fullscreen .fotorama__stage {
   background-color: #ffffff;
-  height: 100vh !important;
+}
+
+.fotorama--fullscreen .fotorama__nav-wrap {
+  display: none;
+}
+
+.fotorama--fullscreen .fotorama__wrap {
+  padding: 0;
+}
+
+.fotorama--fullscreen .fotorama__arr--prev {
+  left: 0;
+}
+
+.fotorama--fullscreen .fotorama__arr--next {
+  right: 0;
 }
 
 .fotorama--fullscreen .fotorama__fullscreen-icon {

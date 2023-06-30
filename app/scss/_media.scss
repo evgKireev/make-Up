@@ -655,6 +655,9 @@
   }
 }
 @media (max-width: 400px) {
+  .container--portfolio {
+    padding: 0 16px;
+  }
   .header {
     &__content {
       h1 {
@@ -754,6 +757,7 @@
   .portfolio {
     gap: 4px 4px;
   }
+
   .header--client {
     margin-bottom: 16px;
   }
