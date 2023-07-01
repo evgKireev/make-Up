@@ -159,7 +159,7 @@
   }
   .pogination {
     bottom: 135px;
-    left: 75px;
+    left: 0;
   }
 }
 
@@ -306,8 +306,7 @@
     }
   }
   .pogination {
-    bottom: 135px;
-    left: 75px;
+    bottom: 128px;
   }
 }
 
@@ -552,7 +551,7 @@
   }
   .pogination {
     font-size: 16px;
-    bottom: 65px;
+    bottom: 83px;
     left: 1px;
   }
   .link,
@@ -784,28 +783,29 @@
   }
   .pogination {
     font-size: 12px;
+    bottom: 40px;
   }
 }
 
-@media (max-height: 900px) {
-  .modal-fotorama {
-    padding: 0;
-  }
-  .close,
-  .link {
-    top: 18px;
-  }
-  .fotorama {
-    &__stage {
-      height: 620px !important;
-      margin-bottom: 13px;
-    }
-  }
-}
+// @media (max-height: 900px) {
+//   .modal-fotorama {
+//     padding: 0;
+//   }
+//   .close,
+//   .link {
+//     top: 18px;
+//   }
+//   .fotorama {
+//     &__stage {
+//       height: 620px !important;
+//       margin-bottom: 13px;
+//     }
+//   }
+// }
 
-@media (max-height: 900px) and (min-width: 1024px) {
-  .pogination {
-    bottom: 115px;
-    left: 105px;
-  }
-}
+// @media (max-height: 900px) and (min-width: 1024px) {
+//   .pogination {
+//     bottom: 115px;
+//     left: 105px;
+//   }
+// }
