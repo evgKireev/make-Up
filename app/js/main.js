@@ -33,9 +33,29 @@ const hamburgerMenu = document.querySelector('.hamburger-menu')
 const body = document.querySelector('body')
 
 let indexImg = 0
+const width = window.innerWidth
 
 function render() {
   pogination ? (pogination.textContent = `1/${portfolioItemImg.length}`) : ''
+
+  if (width <= 1024 && width > 840) {
+    fotoramaData.options.thumbheight = 92
+    fotoramaData.options.thumbwidth = 134
+    fotoramaData.options.maxwidth = 718
+  } else if (width <= 840 && width > 540) {
+    fotoramaData.options.thumbheight = 79
+    fotoramaData.options.thumbwidth = 113
+    fotoramaData.options.maxwidth = 613
+  } else if (width <= 540 && width > 400) {
+    fotoramaData.options.thumbheight = 60
+    fotoramaData.options.thumbwidth = 90
+    fotoramaData.options.maxwidth = 500
+  } else if (width <= 400) {
+    fotoramaData.options.thumbheight = 40
+    fotoramaData.options.thumbwidth = 54
+    fotoramaData.options.maxwidth = 108
+  }
+
   menuItem.forEach((item) => {
     item.addEventListener('click', setItem)
   })
@@ -168,6 +188,8 @@ window.addEventListener('resize', () => {
 })
 
 render()
+
+console.log(fotoramaData)
 
 $('.header__slider').slick({
   accessibility: false,

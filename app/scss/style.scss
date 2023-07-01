@@ -444,8 +444,9 @@
   background-color: $default;
   overflow: visible;
   &__wrap {
-    padding: 56px 105px 0 105px;
+    padding-top: 88px;
     position: static;
+    margin: 0 auto;
   }
 
   &__nav {
@@ -469,29 +470,33 @@
   }
 
   &__arr {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
   }
   &__arr--prev {
-    left: -114px;
+    left: 0;
     background: url('../images/icon/ArPrev.svg');
     background-repeat: no-repeat;
     background-position: center;
+    transition: all 0.7s;
     &:hover {
+      transition: all 0.7s;
       background: url('../images/icon/ArPrev-hover.svg');
       background-repeat: no-repeat;
       background-position: center;
     }
   }
   &__arr--next {
-    right: -114px;
+    right: 0;
     background: url('../images/icon/ArNext.svg');
     background-repeat: no-repeat;
     background-position: center;
+    transition: all 0.7s;
     &:hover {
       background: url('../images/icon/ArNext-hover.svg');
       background-repeat: no-repeat;
       background-position: center;
+      transition: all 0.7s;
     }
   }
   &__fullscreen-icon {
@@ -499,16 +504,18 @@
     background: url('../images/icon/shere.svg');
     background-repeat: no-repeat;
     background-position: center;
+    transition: all 0.7s;
     &:hover {
       background: url('../images/icon/shere-hover.svg');
       background-repeat: no-repeat;
       background-position: center;
+      transition: all 0.7s;
     }
   }
 }
 
 .close {
-  transition: all 0.3s;
+  transition: all 0.5s;
   width: 32px;
   height: 32px;
   background: url('../images/icon/close.svg');
@@ -529,7 +536,7 @@
 }
 
 .link {
-  transition: all 0.3s;
+  transition: all 0.5s;
   width: 32px;
   height: 32px;
   background: url('../images/icon/link.svg');
@@ -553,7 +560,7 @@
   opacity: 1;
   position: absolute;
   bottom: 160px;
-  left: 110px;
+  left: 0;
   color: #797979;
   font-weight: 500;
   font-size: 20px;
@@ -582,14 +589,21 @@
 
 .fotorama--fullscreen .fotorama__fullscreen-icon {
   right: 0;
+  top: 0;
   background: url('../images/icon/noSher.svg');
   background-repeat: no-repeat;
   background-position: center;
+  transition: all 0.7s;
   &:hover {
     background: url('../images/icon/noSher-hover.svg');
     background-repeat: no-repeat;
     background-position: center;
+    transition: all 0.7s;
   }
+}
+
+.fotorama__video-close {
+  display: none;
 }
 
 .share-link {
