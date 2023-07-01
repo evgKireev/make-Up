@@ -156,6 +156,10 @@
     &__arr--next {
       right: -77px;
     }
+    &__fullscreen-icon {
+      top: -35px;
+      right: 18%;
+    }
   }
   .pogination {
     bottom: 135px;
@@ -303,6 +307,10 @@
     }
     &__arr--next {
       right: -77px;
+    }
+    &__fullscreen-icon {
+      top: -35px;
+      right: 13%;
     }
   }
   .pogination {
@@ -519,7 +527,6 @@
     &__stage {
       max-height: 640px !important;
       margin-bottom: 40px;
-      overflow: hidden;
       margin: 0 auto;
       img {
         max-width: 398px !important;
@@ -547,6 +554,8 @@
       width: 24px;
       height: 24px;
       background-size: 24px 24px;
+      top: -35px;
+      right: 7%;
     }
   }
   .pogination {
@@ -635,6 +644,10 @@
         max-width: 320px !important;
         height: 620px !important;
       }
+    }
+    &__fullscreen-icon {
+      top: 15px;
+      right: 40px;
     }
   }
   .link,
@@ -785,6 +798,10 @@
     }
     &__arr--next {
       display: none !important;
+    }
+    &__fullscreen-icon {
+      top: 70px;
+      right: 40px;
     }
   }
   .pogination {
