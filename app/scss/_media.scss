@@ -780,10 +780,16 @@
         height: 450px !important;
       }
     }
+    &__arr--prev {
+      display: none !important;
+    }
+    &__arr--next {
+      display: none !important;
+    }
   }
   .pogination {
     font-size: 12px;
-    bottom: 40px;
+    bottom: 60px;
   }
 }
 
