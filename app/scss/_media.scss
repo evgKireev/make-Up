@@ -150,12 +150,6 @@
     &__nav__shaft {
       gap: 12px;
     }
-    &__arr--prev {
-      left: -77px;
-    }
-    &__arr--next {
-      right: -77px;
-    }
     &__fullscreen-icon {
       top: -35px;
       right: 18%;
@@ -301,12 +295,6 @@
     }
     &__nav__shaft {
       gap: 12px;
-    }
-    &__arr--prev {
-      left: -77px;
-    }
-    &__arr--next {
-      right: -77px;
     }
     &__fullscreen-icon {
       top: -35px;
@@ -525,12 +513,12 @@
       padding-top: 135px;
     }
     &__stage {
-      max-height: 640px !important;
+      max-height: 520px !important;
       margin-bottom: 40px;
       margin: 0 auto;
       img {
         max-width: 398px !important;
-        max-height: 640px !important;
+        max-height: 520px !important;
         object-fit: cover;
         margin: 0 auto;
         height: 100% !important;
@@ -540,13 +528,11 @@
       margin-top: 40px;
     }
     &__arr--prev {
-      left: -7px;
       width: 24px;
       height: 24px;
       background-size: 24px 24px;
     }
     &__arr--next {
-      right: -7px;
       width: 24px;
       height: 24px;
       background-size: 24px 24px;
@@ -640,10 +626,10 @@
       padding-top: 110px;
     }
     &__stage {
-      max-height: 620px !important;
+      max-height: 500px !important;
       img {
         max-width: 320px !important;
-        max-height: 620px !important;
+        max-height: 500px !important;
         height: 100% !important;
       }
     }
@@ -813,18 +799,25 @@
   }
 }
 
-// @media (max-height: 900px) {
-//   .modal-fotorama {
-//     padding: 0;
-//   }
-//   .close,
-//   .link {
-//     top: 18px;
-//   }
-//   .fotorama {
-//     &__stage {
-//       height: 620px !important;
-//       margin-bottom: 13px;
-//     }
-//   }
-// }
+@media (max-height: 900px) and (min-width: 1024px) {
+  .fotorama {
+    &__stage {
+      max-height: 509px !important;
+      margin-bottom: 13px;
+    }
+    &__fullscreen-icon {
+      top: -35px;
+      right: 18%;
+    }
+    &__nav__shaft {
+      gap: 13px;
+    }
+    &__stage {
+      margin-bottom: 25px;
+    }
+  }
+  .pogination {
+    font-size: 16px;
+    bottom: 100px;
+  }
+}

@@ -34,9 +34,9 @@ const body = document.querySelector('body')
 
 let indexImg = 0
 const width = window.innerWidth
+const height = window.innerHeight
 function render() {
   pogination ? (pogination.textContent = `1/${portfolioItemImg.length}`) : ''
-  console.log(fotoramaData.activeIndex)
   if (fotoramaData) {
     if (width <= 1024 && width > 840) {
       fotoramaData.options.thumbheight = 92
@@ -54,6 +54,10 @@ function render() {
       fotoramaData.options.thumbheight = 40
       fotoramaData.options.thumbwidth = 54
       fotoramaData.options.maxwidth = 108
+    } else if (height <= 900 && width > 1024) {
+      fotoramaData.options.thumbheight = 60
+      fotoramaData.options.thumbwidth = 90
+      fotoramaData.options.maxwidth = 718
     }
   }
 
@@ -175,6 +179,7 @@ function render() {
   }
 
   function getIdPhoto() {
+    console.log(fotoramaData.activeIndex)
     pogination.textContent = `${fotoramaData.activeIndex + 1}/${
       portfolioItemImg.length
     }`
@@ -189,8 +194,6 @@ window.addEventListener('resize', () => {
 })
 
 render()
-
-console.log(fotoramaData)
 
 $('.header__slider').slick({
   accessibility: false,
