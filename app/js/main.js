@@ -191,6 +191,8 @@ window.addEventListener('resize', () => {
 
 render()
 
+console.log(fotoramaData)
+
 $('.header__slider').slick({
   accessibility: false,
   autoplay: true,

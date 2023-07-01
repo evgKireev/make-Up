@@ -144,7 +144,7 @@
   }
   .fotorama {
     &__stage {
-      height: 509px !important;
+      max-height: 509px !important;
       margin-bottom: 13px;
     }
     &__nav__shaft {
@@ -296,7 +296,7 @@
   }
   .fotorama {
     &__stage {
-      height: 463px !important;
+      max-height: 463px !important;
       margin-bottom: 17px;
     }
     &__nav__shaft {
@@ -530,7 +530,7 @@
       margin: 0 auto;
       img {
         max-width: 398px !important;
-        height: 640px !important;
+        max-height: 640px !important;
         object-fit: cover;
         margin: 0 auto;
       }
@@ -642,7 +642,7 @@
       max-height: 620px !important;
       img {
         max-width: 320px !important;
-        height: 620px !important;
+        max-height: 620px !important;
       }
     }
     &__fullscreen-icon {
@@ -790,7 +790,7 @@
       max-height: 450px !important;
       img {
         max-width: 230px !important;
-        height: 450px !important;
+        max-height: 450px !important;
       }
     }
     &__arr--prev {
@@ -823,12 +823,5 @@
 //       height: 620px !important;
 //       margin-bottom: 13px;
 //     }
-//   }
-// }
-
-// @media (max-height: 900px) and (min-width: 1024px) {
-//   .pogination {
-//     bottom: 115px;
-//     left: 105px;
 //   }
 // }

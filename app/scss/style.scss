@@ -573,6 +573,16 @@
 
 .fotorama--fullscreen .fotorama__stage {
   background-color: #ffffff;
+  max-height: 100vh !important;
+  img {
+    max-width: 99999px !important;
+    max-height: 99999px !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
 }
 
 .fotorama--fullscreen .fotorama__nav-wrap {
@@ -592,8 +602,8 @@
 }
 
 .fotorama--fullscreen .fotorama__fullscreen-icon {
-  right: 0;
-  top: 0;
+  right: 10px;
+  top: 10px;
   background: url('../images/icon/noSher.svg');
   background-repeat: no-repeat;
   background-position: center;
