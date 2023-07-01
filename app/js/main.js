@@ -34,10 +34,9 @@ const body = document.querySelector('body')
 
 let indexImg = 0
 const width = window.innerWidth
-
 function render() {
   pogination ? (pogination.textContent = `1/${portfolioItemImg.length}`) : ''
-
+  console.log(fotoramaData.activeIndex)
   if (fotoramaData) {
     if (width <= 1024 && width > 840) {
       fotoramaData.options.thumbheight = 92
